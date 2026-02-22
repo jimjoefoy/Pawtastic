@@ -378,3 +378,6 @@ img{ max-width: 100%; display:block; }
   .nav-actions{ display:none; }
   .contact-grid{ grid-template-columns: 1fr; }
 }
+.mobile-menu[hidden]{
+  display: none !important;
+}
