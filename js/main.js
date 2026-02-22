@@ -1,3 +1,16 @@
+// Booking clicks
+const bookingUrl = window.BOOKING_URL;
+
+const goToBooking = (e) => {
+  e.preventDefault();
+  if (!bookingUrl) return;
+  window.open(bookingUrl, "_blank", "noopener");
+};
+
+document.getElementById("bookOnlineNav")?.addEventListener("click", goToBooking);
+document.getElementById("bookWalkBtn")?.addEventListener("click", goToBooking);
+document.getElementById("bookHeroBtn")?.addEventListener("click", goToBooking);
+
 // Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
 
