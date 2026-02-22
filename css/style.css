@@ -57,7 +57,7 @@ img{ max-width: 100%; display:block; }
 .logo.small{ height: 44px; }
 
 .nav-links{
-  margin: 0 auto;
+  margin-left: auto;
   display:flex;
   gap: 26px;
   align-items:center;
