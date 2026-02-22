@@ -97,35 +97,6 @@ img{ max-width: 100%; display:block; }
 }
 .btn-lg{ padding: 14px 22px; }
 
-.icon-btn{
-  width: 44px; height: 44px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: transparent;
-  display:grid;
-  place-items:center;
-  cursor: pointer;
-}
-.icon-btn i{ font-size: 20px; color: var(--text); }
-
-.cart{
-  position: relative;
-}
-.cart-badge{
-  position:absolute;
-  top: -6px;
-  right: -6px;
-  width: 22px;
-  height: 22px;
-  border-radius: 999px;
-  background: var(--btn);
-  color: white;
-  display:grid;
-  place-items:center;
-  font-size: 12px;
-  font-weight: 700;
-}
-
 .hamburger{
   display:none;
   margin-left: 6px;
