@@ -1,3 +1,5 @@
+document.documentElement.classList.remove("no-js");
+
 // Booking clicks
 const bookingUrl = window.BOOKING_URL;
 
