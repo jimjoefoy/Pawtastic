@@ -381,3 +381,15 @@ img{ max-width: 100%; display:block; }
 .mobile-menu[hidden]{
   display: none !important;
 }
+.mobile-menu a{
+  text-decoration:none;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--text);
+}
+
+.mobile-menu a.btn{
+  border-bottom: none;
+  padding: 11px 18px;
+  width: fit-content; /* or 100% if you want full width */
+}
