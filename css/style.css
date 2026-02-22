@@ -100,7 +100,8 @@ img{ max-width: 100%; display:block; }
 .hamburger{
   display:none;
   margin-left: 6px;
-  width: 44px; height: 44px;
+  width: 44px;
+  height: 44px;
   border-radius: 999px;
   border: 1px solid var(--line);
   background: transparent;
@@ -112,17 +113,27 @@ img{ max-width: 100%; display:block; }
   background: var(--text);
   margin: 4px auto;
 }
+
+/* Mobile menu */
 .mobile-menu{
   padding: 10px 0 18px;
   display:flex;
   gap: 10px;
   flex-direction: column;
 }
+.mobile-menu[hidden]{
+  display: none !important;
+}
 .mobile-menu a{
   text-decoration:none;
   padding: 10px 0;
   border-bottom: 1px solid var(--line);
   color: var(--text);
+}
+.mobile-menu a.btn{
+  border-bottom: none;
+  padding: 11px 18px;
+  width: fit-content; /* change to 100% if you want full-width button */
 }
 
 /* Hero */
@@ -270,7 +281,8 @@ img{ max-width: 100%; display:block; }
   margin: 0 0 10px;
   color: var(--text);
 }
-.contact-tile a, .contact-tile p{
+.contact-tile a,
+.contact-tile p{
   color: var(--muted);
   margin: 0;
   text-decoration:none;
@@ -309,15 +321,19 @@ img{ max-width: 100%; display:block; }
   text-decoration:none;
   color: var(--muted);
 }
-.footer-links a:hover{ color: var(--text); text-decoration: underline; text-underline-offset: 6px; }
-
+.footer-links a:hover{
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
 .footer-social{
   justify-self:end;
   display:flex;
   gap: 10px;
 }
 .footer-social a{
-  width: 42px; height: 42px;
+  width: 42px;
+  height: 42px;
   border-radius: 999px;
   border: 1px solid var(--line);
   display:grid;
@@ -325,7 +341,6 @@ img{ max-width: 100%; display:block; }
   text-decoration:none;
 }
 .footer-social i{ font-size: 18px; color: var(--text); }
-
 .footer-bottom{
   padding-top: 14px;
   color: var(--muted);
@@ -349,26 +364,15 @@ img{ max-width: 100%; display:block; }
   .nav-actions{ display:none; }
   .contact-grid{ grid-template-columns: 1fr; }
 }
-.mobile-menu[hidden]{
-  display: none !important;
-}
-.mobile-menu a{
-  text-decoration:none;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--line);
-  color: var(--text);
-}
 
-.mobile-menu a.btn{
-  border-bottom: none;
-  padding: 11px 18px;
-  width: fit-content; /* or 100% if you want full width */
-}
-/* -------- Motion: reveal on scroll -------- */
+/* =========================
+   Motion: reveal on scroll
+   ========================= */
 .reveal {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 700ms ease, transform 700ms ease;
+  transition-delay: var(--delay, 0ms); /* stagger support */
   will-change: opacity, transform;
 }
 
@@ -388,12 +392,7 @@ img{ max-width: 100%; display:block; }
   transform: none;
 }
 
-/* Stagger support */
-.reveal[data-delay] {
-  transition-delay: var(--delay, 0ms);
-}
-
-/* -------- Hero entrance -------- */
+/* Hero entrance */
 .hero-animate {
   opacity: 0;
   transform: translateY(14px);
@@ -408,21 +407,19 @@ img{ max-width: 100%; display:block; }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* -------- Micro-interactions -------- */
+/* Micro-interactions */
 .btn, .card, .footer-social a {
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
-.btn:hover {
-  transform: translateY(-2px);
-}
+.btn:hover { transform: translateY(-2px); }
 
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 16px 36px rgba(0,0,0,.08);
 }
 
-/* Optional: make images subtly zoom on hover */
+/* Subtle image zoom on hover */
 .card-img, .feature-img, .hero-media img {
   transition: transform 300ms ease;
 }
@@ -431,7 +428,13 @@ img{ max-width: 100%; display:block; }
   transform: scale(1.02);
 }
 
-/* -------- Respect reduced motion -------- */
+/* Safety: if JS doesn't run, don't hide content forever */
+html.no-js .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+/* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal, .hero-animate, .btn, .card, .card-img, .feature-img, .hero-media img {
