@@ -1,21 +1,258 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" id="top">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Site Title</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paw Patrol Walkers</title>
+  <meta name="description" content="Professional dog walking with updates, tailored pacing, and dependable care." />
 
-  <header>
-    <h1>Welcome to My Site</h1>
+  <!-- Fonts similar to the screenshot vibe (elegant serif + clean sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons (social/user/cart) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Top Nav -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Home">
+        <img src="assets/logo.png" alt="Logo" class="logo" />
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#top" class="active">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#book">Book Online</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="#book">Book Walk</a>
+
+        <button class="icon-btn" type="button" aria-label="Account">
+          <i class="fa-solid fa-circle-user"></i>
+        </button>
+
+        <button class="icon-btn cart" type="button" aria-label="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu container" id="mobileMenu" hidden>
+      <a href="#top">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#book">Book Online</a>
+      <a class="btn btn-primary" href="#book">Book Walk</a>
+    </div>
   </header>
 
-  <main>
-    <p>This is my GitHub Pages website.</p>
-  </main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>PAW PATROL<br/>WALKERS<br/>ADVENTURES</h1>
 
-  <script src="js/script.js"></script>
+        <p class="hero-sub">
+          Professional, reliable dog walking with the right pace for your pup —
+          plus updates that keep you in the loop.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="#book">BOOK A WALK</a>
+        </div>
+
+        <p class="trust">
+          Bonded, insured, and background-checked.
+        </p>
+      </div>
+
+      <div class="hero-media">
+        <img src="assets/hero.jpg" alt="Dog walker with dogs" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">Our Pawsome Services</h2>
+
+      <div class="card-grid card-grid-3">
+        <article class="card pastel-green">
+          <img src="assets/service1.jpg" alt="Puppy walking" class="card-img" />
+          <h3>Puppy Power Walks</h3>
+          <p>Perfect for little zoomie-machines who need to burn off energy (safely).</p>
+        </article>
+
+        <article class="card pastel-blue">
+          <img src="assets/service2.jpg" alt="Group walk" class="card-img" />
+          <h3>The Gossiper’s Group</h3>
+          <p>Small group walks where pups get social time and structured movement.</p>
+        </article>
+
+        <article class="card pastel-lavender">
+          <img src="assets/service3.jpg" alt="Senior dog" class="card-img" />
+          <h3>Senior Sniff-a-Thon</h3>
+          <p>A calm, dignified pace focusing on sniffs, smiles, and easy steps.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Why Pups Love Us</h2>
+
+      <div class="card-grid card-grid-4">
+        <article class="card pastel-green">
+          <div class="feature-top">
+            <img src="assets/feature1.jpg" alt="Safety icon" class="feature-img" />
+          </div>
+          <h3>Safe &amp; Sound</h3>
+          <p>Insured &amp; background-checked walkers because security comes first.</p>
+        </article>
+
+        <article class="card pastel-blue">
+          <div class="feature-top">
+            <img src="assets/feature2.jpg" alt="Phone with map" class="feature-img" />
+          </div>
+          <h3>Live Updates</h3>
+          <p>Photos + GPS-style summaries after each tail-wagging adventure.</p>
+        </article>
+
+        <article class="card pastel-lavender">
+          <div class="feature-top">
+            <img src="assets/feature3.jpg" alt="Dog being petted" class="feature-img" />
+          </div>
+          <h3>Tailored Pacing</h3>
+          <p>From zoomies to slow sniffs — we match energy level and comfort.</p>
+        </article>
+
+        <article class="card pastel-sand">
+          <div class="feature-top">
+            <img src="assets/feature4.jpg" alt="Treat jar" class="feature-img" />
+          </div>
+          <h3>Treats Included</h3>
+          <p>Positive reinforcement with parent-approved snacks for good pups.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <h2 class="section-title">Pawsitive Reviews</h2>
+
+      <div class="card-grid card-grid-3">
+        <article class="card pastel-green review">
+          <div class="review-head">
+            <img src="assets/review1.jpg" alt="Buddy" class="avatar" />
+            <h3>Buddy</h3>
+          </div>
+          <p class="review-text">
+            Ruff ruff! Bark bark! Aroo! <br/>
+            <em>Translation:</em> Best walkies ever, 12/10 would chase squirrels again.
+          </p>
+        </article>
+
+        <article class="card pastel-blue review">
+          <div class="review-head">
+            <img src="assets/review2.jpg" alt="Luna" class="avatar" />
+            <h3>Luna</h3>
+          </div>
+          <p class="review-text">
+            The sniffs on my morning walk are top-tier. My walker knows exactly which
+            fire hydrant has the best news. Five stars!
+          </p>
+        </article>
+
+        <article class="card pastel-lavender review">
+          <div class="review-head">
+            <img src="assets/review3.jpg" alt="Cooper" class="avatar" />
+            <h3>Cooper</h3>
+          </div>
+          <p class="review-text">
+            I’m a simple guy. I see a leash, I get excited. These humans understand
+            that the first 10 minutes must be dedicated to intense sniffing.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book / Contact -->
+  <section class="section section-book" id="book">
+    <div class="container">
+      <h2 class="section-title">Reach Out to the Pack</h2>
+      <p class="section-subtitle">
+        We’re excited to learn about your pup and how we can make their day pawsome!
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-tile">
+          <h3>CALL US</h3>
+          <a href="tel:+13125557297">(312) 555-PAWS</a>
+        </div>
+
+        <div class="contact-tile">
+          <h3>EMAIL US</h3>
+          <a href="mailto:hello@pawpatrolwalkers.com">hello@pawpatrolwalkers.com</a>
+        </div>
+
+        <div class="contact-tile">
+          <h3>VISIT US</h3>
+          <p>820 N Michigan Ave,<br/>Chicago, IL 60611</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Logo" class="logo small" />
+        <div>
+          <div class="footer-title">Paw Patrol Walkers</div>
+          <div class="footer-tagline">Happy paws, professional care, and playful walks.</div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#top">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#book">Book Online</a>
+      </div>
+
+      <div class="footer-social" aria-label="Social links">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <small>© <span id="year"></span> Paw Patrol Walkers. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
