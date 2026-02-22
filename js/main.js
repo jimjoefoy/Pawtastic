@@ -15,7 +15,8 @@ document.getElementById("bookWalkBtnMobile")?.addEventListener("click", goToBook
 document.getElementById("bookHeroBtn")?.addEventListener("click", goToBooking);
 
 // -------------------- Footer year --------------------
-document.getElementById("year")?.textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
 // -------------------- Mobile menu --------------------
 const hamburger = document.getElementById("hamburger");
