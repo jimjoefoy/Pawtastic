@@ -1,16 +1,16 @@
 :root{
-  --bg: #fbfaf6;
-  --text: #163b2c;
-  --muted: #315c4a;
-  --line: rgba(22,59,44,.12);
+  --bg: #EBEBEB;
+  --text: #004E98;
+  --muted: #3A6EA5;
+  --line: rgba(0,78,152,.18);
 
-  --btn: #163b2c;
+  --btn: #FF6700;
   --btnText: #ffffff;
 
-  --green: #dfeecb;
-  --blue: #c8f1ff;
-  --lav: #dcd8ff;
-  --sand: #e7e6de;
+  --green: #EBEBEB;
+  --blue: #3A6EA5;
+  --lav: #C0C0C0;
+  --sand: #ffffff;
 
   --radius: 28px;
   --radiusImg: 22px;
@@ -26,7 +26,7 @@ html{ scroll-behavior: smooth; }
 body{
   margin:0;
   background: var(--bg);
-  color: var(--text);
+  color: #1f1f1f;
   font-family: var(--sans);
 }
 
@@ -43,7 +43,7 @@ img{ max-width: 100%; display:block; }
   position: sticky;
   top:0;
   z-index: 50;
-  background: rgba(251,250,246,0.85);
+  background: rgba(235,235,235,0.92);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
 }
@@ -65,7 +65,7 @@ img{ max-width: 100%; display:block; }
 .nav-links a{
   text-decoration:none;
   color: var(--muted);
-  font-weight: 500;
+  font-weight: 600;
 }
 .nav-links a.active,
 .nav-links a:hover{
@@ -87,13 +87,17 @@ img{ max-width: 100%; display:block; }
   padding: 11px 18px;
   border-radius: 999px;
   border: 1px solid var(--line);
-  background: transparent;
-  font-weight: 600;
+  background: #ffffff;
+  color: var(--text);
+  font-weight: 700;
 }
 .btn-primary{
   background: var(--btn);
   color: var(--btnText);
   border-color: transparent;
+}
+.btn-primary:hover{
+  box-shadow: 0 10px 24px rgba(255,103,0,.25);
 }
 .btn-lg{ padding: 14px 22px; }
 
@@ -104,7 +108,7 @@ img{ max-width: 100%; display:block; }
   height: 44px;
   border-radius: 999px;
   border: 1px solid var(--line);
-  background: transparent;
+  background: #ffffff;
 }
 .hamburger span{
   display:block;
@@ -133,7 +137,7 @@ img{ max-width: 100%; display:block; }
 .mobile-menu a.btn{
   border-bottom: none;
   padding: 11px 18px;
-  width: fit-content; /* change to 100% if you want full-width button */
+  width: fit-content;
 }
 
 /* Hero */
@@ -157,7 +161,7 @@ img{ max-width: 100%; display:block; }
 }
 .hero-sub{
   max-width: 52ch;
-  color: var(--muted);
+  color: #444;
   font-size: 16px;
   margin: 0 0 20px;
 }
@@ -170,7 +174,8 @@ img{ max-width: 100%; display:block; }
   border-radius: var(--radius);
   aspect-ratio: 4/5;
   object-fit: cover;
-  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  box-shadow: 0 10px 30px rgba(0,78,152,.12);
+  border: 3px solid #ffffff;
 }
 
 /* Sections */
@@ -183,12 +188,13 @@ img{ max-width: 100%; display:block; }
   text-align:center;
   font-size: clamp(34px, 4vw, 56px);
   margin: 0 0 26px;
+  color: var(--text);
 }
 .section-subtitle{
   text-align:center;
   margin: -10px auto 34px;
   max-width: 60ch;
-  color: var(--muted);
+  color: #4e4e4e;
 }
 
 .card-grid{
@@ -205,6 +211,7 @@ img{ max-width: 100%; display:block; }
   display:flex;
   flex-direction: column;
   gap: 12px;
+  border: 1px solid rgba(0,78,152,.10);
 }
 .card-img{
   border-radius: var(--radiusImg);
@@ -218,17 +225,23 @@ img{ max-width: 100%; display:block; }
   font-weight: 400;
   font-size: 28px;
   margin: 0;
+  color: var(--text);
 }
 .card p{
   margin: 0;
-  color: var(--muted);
+  color: #444;
   line-height: 1.45;
 }
 
-.pastel-green{ background: var(--green); }
-.pastel-blue{ background: var(--blue); }
-.pastel-lavender{ background: var(--lav); }
-.pastel-sand{ background: var(--sand); }
+.pastel-green{ background: #ffffff; }
+.pastel-blue{ background: #EBEBEB; }
+.pastel-lavender{ background: #C0C0C0; }
+.pastel-sand{ background: #3A6EA5; }
+
+.pastel-sand h3,
+.pastel-sand p{
+  color: #ffffff;
+}
 
 /* Features */
 .feature-top{
@@ -255,13 +268,15 @@ img{ max-width: 100%; display:block; }
   width: 56px;
   height: 56px;
   border-radius: 999px;
-  border: 2px solid rgba(22,59,44,.25);
+  border: 2px solid rgba(0,78,152,.25);
   object-fit: cover;
 }
 .review-text{ margin-top: 6px; }
 
 /* Contact */
-.section-book{ padding-bottom: 70px; }
+.section-book{ 
+  padding-bottom: 70px;
+}
 .contact-grid{
   display:grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -269,7 +284,7 @@ img{ max-width: 100%; display:block; }
   margin-top: 22px;
 }
 .contact-tile{
-  background: rgba(22,59,44,.06);
+  background: #ffffff;
   border: 1px solid var(--line);
   border-radius: 18px;
   padding: 26px;
@@ -292,6 +307,8 @@ img{ max-width: 100%; display:block; }
 .footer{
   border-top: 1px solid var(--line);
   padding: 28px 0 14px;
+  background: #004E98;
+  color: #ffffff;
 }
 .footer-grid{
   display:grid;
@@ -309,7 +326,7 @@ img{ max-width: 100%; display:block; }
   font-size: 22px;
 }
 .footer-tagline{
-  color: var(--muted);
+  color: rgba(255,255,255,.82);
   font-size: 14px;
 }
 .footer-links{
@@ -319,10 +336,10 @@ img{ max-width: 100%; display:block; }
 }
 .footer-links a{
   text-decoration:none;
-  color: var(--muted);
+  color: rgba(255,255,255,.82);
 }
 .footer-links a:hover{
-  color: var(--text);
+  color: #ffffff;
   text-decoration: underline;
   text-underline-offset: 6px;
 }
@@ -335,15 +352,16 @@ img{ max-width: 100%; display:block; }
   width: 42px;
   height: 42px;
   border-radius: 999px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(255,255,255,.25);
   display:grid;
   place-items:center;
   text-decoration:none;
+  background: rgba(255,255,255,.08);
 }
-.footer-social i{ font-size: 18px; color: var(--text); }
+.footer-social i{ font-size: 18px; color: #ffffff; }
 .footer-bottom{
   padding-top: 14px;
-  color: var(--muted);
+  color: rgba(255,255,255,.74);
 }
 
 /* Responsive */
@@ -372,7 +390,7 @@ img{ max-width: 100%; display:block; }
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 700ms ease, transform 700ms ease;
-  transition-delay: var(--delay, 0ms); /* stagger support */
+  transition-delay: var(--delay, 0ms);
   will-change: opacity, transform;
 }
 
@@ -416,7 +434,7 @@ img{ max-width: 100%; display:block; }
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 36px rgba(0,0,0,.08);
+  box-shadow: 0 16px 36px rgba(0,78,152,.10);
 }
 
 /* Subtle image zoom on hover */
