@@ -512,3 +512,6 @@ html.no-js .reveal {
     grid-template-columns: 1fr;
   }
 }
+.contact-tile a.btn{
+  color: #ffffff;
+}
