@@ -172,8 +172,9 @@ img{ max-width: 100%; display:block; }
 }
 .hero-media img{
   border-radius: var(--radius);
-  aspect-ratio: 4/5;
-  object-fit: cover;
+  width: 100%;
+  height: auto;            /* let image size naturally */
+  object-fit: contain;     /* NEVER crop */
   box-shadow: 0 10px 30px rgba(0,78,152,.12);
   border: 3px solid #ffffff;
 }
