@@ -13,7 +13,328 @@
 <body>
   <section class="section">
     <div class="container">
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dog Walks | Pawsitive Pet Care</title>
 
+  <script>
+    window.BOOKING_URL = "https://www.timetopet.com/portal/pawsitivepetcarewi";
+  </script>
+
+  <meta name="description" content="Professional dog walking services from Pawsitive Pet Care, including 30 and 60 minute walks with dependable care and thoughtful updates." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    .page-hero{
+      padding: 40px 0 20px;
+    }
+    .breadcrumb{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      align-items:center;
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .breadcrumb a{
+      text-decoration:none;
+      color: var(--muted);
+    }
+    .breadcrumb a:hover{
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    .service-page-grid{
+      display:grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 34px;
+      align-items:start;
+    }
+    .service-page-copy h1{
+      font-family: var(--serif);
+      font-weight: 400;
+      letter-spacing: .3px;
+      font-size: clamp(38px, 5vw, 64px);
+      line-height: 1.02;
+      margin: 0 0 16px;
+      color: var(--text);
+    }
+    .service-page-copy p{
+      color:#444;
+      line-height:1.6;
+    }
+    .service-page-media img{
+      width:100%;
+      border-radius: var(--radius);
+      object-fit: cover;
+      box-shadow: 0 10px 30px rgba(0,78,152,.12);
+      border: 3px solid #ffffff;
+    }
+    .detail-grid{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 28px;
+    }
+    .detail-card{
+      background:#ffffff;
+      border:1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 8px 20px rgba(0,0,0,.05);
+    }
+    .detail-card h2{
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 30px;
+      margin: 0 0 12px;
+      color: var(--text);
+    }
+    .detail-card p,
+    .detail-card li{
+      color:#444;
+      line-height:1.55;
+    }
+    .detail-card ul{
+      margin: 12px 0 0;
+      padding-left: 20px;
+    }
+    .price-list{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .price-list li{
+      padding: 12px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .price-list li:last-child{
+      border-bottom: none;
+    }
+    .page-cta{
+      margin-top: 28px;
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+      align-items:center;
+    }
+    .page-note{
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    @media (max-width: 980px){
+      .service-page-grid,
+      .detail-grid{
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/index3.html#hero" aria-label="Home">
+        <img src="assets/logo4.png" alt="Logo" class="logo" />
+      </a>
+
+      <nav class="nav-links">
+        <a href="/index3.html#services">Services</a>
+        <a href="/index3.html#reviews">Reviews</a>
+        <a href="/index3.html#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="https://www.timetopet.com/portal/pawsitivepetcarewi" target="_blank">
+          Book Now
+        </a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu container" id="mobileMenu" hidden>
+      <a href="/index3.html#services">Services</a>
+      <a href="/index3.html#reviews">Reviews</a>
+      <a href="/index3.html#contact">Contact</a>
+      <a class="btn btn-primary" href="https://www.timetopet.com/portal/pawsitivepetcarewi" target="_blank">
+        Book Now
+      </a>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container service-page-grid">
+
+      <div class="service-page-copy">
+        <nav aria-label="Breadcrumb" class="breadcrumb reveal">
+          <a href="/index3.html">Home</a>
+          <span>›</span>
+          <a href="/index3.html#services">Services</a>
+          <span>›</span>
+          <span aria-current="page">Dog Walks</span>
+        </nav>
+
+        <h1 class="reveal">Dog Walks</h1>
+
+        <p class="reveal" style="--delay: 80ms;">
+          Reliable walks tailored to your dog’s pace, personality, energy level, and routine. Whether your dog needs a mid-day break, consistent exercise, or a longer outing, Pawsitive Pet Care provides dependable walks with thoughtful care and updates that keep you in the loop.
+        </p>
+
+        <p class="reveal" style="--delay: 140ms;">
+          We offer a free consultation to meet you and your dog before getting started, so everyone feels comfortable and confident from day one.
+        </p>
+
+        <div class="page-cta reveal" style="--delay: 200ms;">
+          <a class="btn btn-primary btn-lg" href="https://www.timetopet.com/portal/pawsitivepetcarewi" target="_blank">
+            Visit Client Portal
+          </a>
+          <a class="btn btn-lg" href="/index3.html#contact">
+            Contact Us
+          </a>
+        </div>
+
+        <p class="page-note reveal" style="--delay: 260ms;">
+          More service details, scheduling, and client information are available in the Client Portal.
+        </p>
+      </div>
+
+      <div class="service-page-media reveal reveal--right">
+        <img src="assets/service1.jpg" alt="Dog walking service from Pawsitive Pet Care" />
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 24px;">
+    <div class="container">
+
+      <div class="detail-grid">
+
+        <article class="detail-card reveal reveal--left">
+          <h2>Pricing</h2>
+          <ul class="price-list">
+            <li><strong>30 minute dog walk:</strong> $25</li>
+            <li><strong>60 minute dog walk:</strong> $45</li>
+          </ul>
+        </article>
+
+        <article class="detail-card reveal reveal--right">
+          <h2>What’s Included</h2>
+          <ul>
+            <li>Walks tailored to your dog’s pace and energy level</li>
+            <li>Fresh water and a quick check-in after each visit</li>
+            <li>Attention to weather, safety, and your dog’s comfort</li>
+            <li>Dependable care with thoughtful updates</li>
+          </ul>
+        </article>
+
+        <article class="detail-card reveal reveal--left">
+          <h2>Good Fit For</h2>
+          <ul>
+            <li>Dogs who need exercise during the day</li>
+            <li>Busy work schedules and long days away from home</li>
+            <li>Dogs who benefit from routine and consistency</li>
+            <li>Pet parents who want reliable care they can trust</li>
+          </ul>
+        </article>
+
+        <article class="detail-card reveal reveal--right">
+          <h2>Getting Started</h2>
+          <p>
+            Start with a free consultation so we can meet you and your dog, learn about your routine, and make sure the service is the right fit.
+          </p>
+          <p>
+            After that, scheduling and service details are available through the Client Portal.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <img src="assets/logo4.png" alt="Logo" class="logo small" />
+        <div>
+          <div class="footer-title">Pawsitive Pet Care</div>
+          <div class="footer-tagline">
+            Dependable care for dogs, cats, and the people who love them.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="/index3.html#services">Services</a>
+        <a href="/index3.html#reviews">Reviews</a>
+        <a href="/index3.html#contact">Contact</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="mailto:pawsitivepetcarewi@yahoo.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Pawsitive Pet Care. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.documentElement.classList.remove('no-js');
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    if (hamburger && mobileMenu) {
+      hamburger.addEventListener('click', () => {
+        const isOpen = !mobileMenu.hasAttribute('hidden');
+        if (isOpen) {
+          mobileMenu.setAttribute('hidden', '');
+          hamburger.setAttribute('aria-expanded', 'false');
+        } else {
+          mobileMenu.removeAttribute('hidden');
+          hamburger.setAttribute('aria-expanded', 'true');
+        }
+      });
+    }
+
+    const revealItems = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealItems.forEach((item) => observer.observe(item));
+  </script>
+
+</body>
+</html>
       <h1>Dog Walking in Oregon, Stoughton, Brooklyn, Fitchburg, and Verona, WI</h1>
 
       <p>
