@@ -122,3 +122,14 @@
     grid-template-columns: 1fr;
   }
 }
+.service-inline-image{
+  margin-top: 22px;
+}
+
+.service-inline-image img{
+  width: 100%;
+  border-radius: var(--radius);
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,78,152,.12);
+  border: 3px solid #ffffff;
+}
