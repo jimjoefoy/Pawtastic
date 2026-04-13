@@ -141,7 +141,7 @@
 .service-slides{
   position: relative;
   width: 100%;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 5;
   overflow: hidden;
   border-radius: var(--radius);
   box-shadow: 0 10px 30px rgba(0,78,152,.12);
