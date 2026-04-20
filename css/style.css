@@ -385,6 +385,12 @@ img{ max-width: 100%; display:block; }
   .nav-actions{ display:none; }
   .contact-grid{ grid-template-columns: 1fr; }
 }
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr auto;
+  gap: 24px;
+  align-items: start;
+}
 
 /* =========================
    Motion: reveal on scroll
