@@ -54,7 +54,7 @@ img{ max-width: 100%; display:block; }
   padding: 16px 0;
 }
 .logo{ height: 100px; width:auto; }
-.logo.small{ height: 44px; }
+.logo.small{ height: 60px; }
 
 .nav-links{
   margin-left: auto;
