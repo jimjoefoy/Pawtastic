@@ -53,7 +53,7 @@ img{ max-width: 100%; display:block; }
   gap: 18px;
   padding: 16px 0;
 }
-.logo{ height: 54px; width:auto; }
+.logo{ height: 70px; width:auto; }
 .logo.small{ height: 44px; }
 
 .nav-links{
