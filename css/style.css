@@ -415,6 +415,12 @@ img{ max-width: 100%; display:block; }
     text-align: left;
   }
 }
+.footer-owner {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  line-height: 1.4;
+}
 
 @media (max-width: 760px){
   .nav-links{ display:none; }
