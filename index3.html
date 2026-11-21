@@ -1,10 +1,19 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B3KC7XHPJF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B3KC7XHPJF');
+</script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Dog walking and pet sitting in Oregon, Stoughton, Fitchburg, Verona, Brooklyn, and Verona WI. Reliable in-home pet care, cat visits, and boarding. Free consultation available.">
-  <title>Dog Walking & Pet Sitting in Oregon, Stoughton, Fitchburg, Verona, Brooklyn, and Verona WI | Pawsitive Pet Care</title>
+  <meta name="description" content="Dog walking and pet sitting in Oregon, Stoughton, Fitchburg, Verona, and Brooklyn WI. Reliable in-home pet care, cat visits, and boarding. Free consultation available.">
+  <title>Dog Walking & Pet Sitting in Oregon, Stoughton & Fitchburg WI | Pawsitive Pet Care</title>
 
   <script>
     window.BOOKING_URL = "https://www.timetopet.com/portal/pawsitivepetcarewi";
@@ -25,16 +34,84 @@
   <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "PetCare",
-  "name": "Pawsitive Pet Care",
-  "areaServed": ["Oregon WI", "Stoughton WI", "Fitchburg WI", "Verona WI", "Brooklyn WI"],
-  "description": "Dog walking, pet sitting, and cat care services",
-  "url": "https://pawsitivepetcarewi.com"
-}
-</script>
+
+  <style>
+    .hero .hero-cta, .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 12px;
+    }
+
+    .hero-cta .btn.pricing-button {
+      background: #084b87;
+      border-color: #084b87;
+      color: #fff;
+    }
+
+    .hero-cta .btn.pricing-button:hover {
+      background: #063764;
+      border-color: #063764;
+    }
+
+    #services .price-list, .service-pricing .price-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.65rem 0;
+    }
+
+    .price-list li {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.6rem;
+      padding: 0.15rem 0;
+    }
+
+    .price-list strong {
+      white-space: nowrap;
+    }
+
+    #services .price-list, #services .nightly-rate,
+    .service-pricing .price-list, .service-pricing .nightly-rate {
+      font-size: 1.2rem;
+      line-height: 1.35;
+      color: #173b5c;
+    }
+
+    .message-pricing-row .service-pricing:not(:empty) {
+      align-self: start;
+      min-width: 0;
+      padding: 15px 18px;
+      border: 1px solid #c8dcef;
+      border-radius: 16px;
+      background: #edf5fc;
+    }
+
+    .service-pricing h3, .service-pricing .pricing-note {
+      margin: 0;
+    }
+
+    @media (min-width: 701px) {
+      .contact-form .message-pricing-row {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .contact-form .message-pricing-row {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .message-pricing-row .service-pricing:not(:empty) {
+        grid-row: 1;
+        margin-bottom: 12px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -47,7 +124,7 @@
       </a>
 
       <nav class="nav-links">
-        <a href="#services">Services</a>
+        <a href="#services">Services &amp; Pricing</a>
         <a href="#reviews">Reviews</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -64,7 +141,7 @@
     </div>
 
     <div class="mobile-menu container" id="mobileMenu" hidden>
-      <a href="#services">Services</a>
+      <a href="#services">Services &amp; Pricing</a>
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
       <a class="btn btn-primary" href="https://www.timetopet.com/portal/pawsitivepetcarewi" target="_blank">
@@ -79,7 +156,9 @@
 
       <div class="hero-copy">
         <h1 class="hero-animate delay-1">
-          Dog Walking & Pet Sitting in Oregon, Stoughton, Fitchburg, Brooklyn, and Verona, WI
+          <h1 class="hero-animate delay-1">
+            Dog Walking & Pet&nbsp;Sitting in Oregon, Stoughton, Fitchburg, Brooklyn, and Verona,&nbsp;WI
+          </h1>
         </h1>
         <p class="hero-animate delay-2" style="font-weight:600; margin-top:10px;">
           Pawsitive Pet Care
@@ -87,12 +166,16 @@
         <p class="hero-sub hero-animate delay-2">
           Dependable dog walks, pet visits, and cat boarding with thoughtful care and updates that keep you in the loop.
           <br><br>
-          <strong>Free consultation to meet you and your pet before getting started.</strong>
+          <strong>Owned and operated by Shaun Moses • Fully Bonded & Insured</strong>
+          <br><br>
+          Free consultation to meet you and your pet before getting started.
         </p>
-
         <div class="hero-cta hero-animate delay-3">
+          <a class="btn btn-primary btn-lg pricing-button" href="#services">
+            View Pricing
+          </a>
           <a class="btn btn-primary btn-lg" href="#contact" id="bookHeroBtn">
-            CONTACT US
+            Contact Us
           </a>
         </div>
 
@@ -112,7 +195,7 @@
   <section class="section" id="services">
     <div class="container">
 
-      <h2 class="section-title reveal">Our Services</h2>
+      <h2 class="section-title reveal">Services &amp; Pricing</h2>
 
       <div class="card-grid card-grid-3">
 
@@ -120,9 +203,14 @@
           <img src="assets/services1.jpg" alt="dog walking in Oregon WI" class="card-img" />
           <h3>Dog Walks</h3>
           <p>Reliable walks tailored to your dog’s pace, personality, and routine.</p>
-          <p><strong>30 minute dog walk:</strong> $25</p>
-          <p><strong>60 minute dog walk:</strong> $45</p>
-          <p><strong>20 minute house visit / pit stop:</strong> $15</p>
+          <ul class="price-list" id="dog-walks-rates">
+            <li><span>30-minute dog walk</span><strong>$25*</strong></li>
+            <li><span>60-minute dog walk</span><strong>$45*</strong></li>
+            <li><span>20-minute house visit / pit stop</span><strong>$15*</strong></li>
+          </ul>
+          <p class="pricing-note">
+            *$5 per extra pet per visit. Fees may apply for evenings, weekends, and holidays.
+          </p>
           <a class="btn" href="/dog-walking.html" style="margin-top:12px;">
             Learn More
           </a>
@@ -131,10 +219,15 @@
         <article class="card pastel-blue reveal">
           <img src="assets/services2.jpg" alt="pet sitting in Stoughton WI" class="card-img" />
           <h3>Cat Visits</h3>
-          <p>Drop-in visits for feeding, potty breaks, playtime, and check-ins while you’re away.</p>
-          <p><strong>20 minute cat visit:</strong> $15</p>
-          <p><strong>30 minute cat visit:</strong> $20</p>
-          <p><strong>45 minute cat visit:</strong> $30</p>
+          <p>Drop-in visits for feeding, playtime, and check-ins while you’re away.</p>
+          <ul class="price-list" id="cat-visits-rates">
+            <li><span>20-minute cat visit</span><strong>$15*</strong></li>
+            <li><span>30-minute cat visit</span><strong>$20*</strong></li>
+            <li><span>45-minute cat visit</span><strong>$30*</strong></li>
+          </ul>
+          <p class="pricing-note">
+            *$5 per extra pet per visit. Fees may apply for evenings, weekends, and holidays.
+          </p>
           <a class="btn" href="/cat-visits.html" style="margin-top:12px;">
             Learn More
           </a>
@@ -143,7 +236,8 @@
         <article class="card pastel-lavender reveal reveal--right">
           <img src="assets/services3.jpg" alt="cat care in Fitchburg WI" class="card-img" />
           <h3>Cat Boarding</h3>
-          <p>Private, spacious, cage free room providing a comfortable, calm, and safe environment starting at $35 per night.</p>
+          <p>Private, spacious, cage free room providing a comfortable, calm, and safe environment.</p>
+          <p class="nightly-rate" id="cat-boarding-rates"><strong>From $35 per night</strong></p>
           <a class="btn" href="/cat-boarding.html" style="margin-top:12px;">
             Learn More
           </a>
@@ -158,6 +252,19 @@
     <div class="container">
 
       <h2 class="section-title reveal">Pawsitive Reviews</h2>
+
+      <!-- GOOGLE REVIEWS: Paste the complete Elfsight installation snippet below this line. -->
+
+      <!-- GOOGLE REVIEW BUTTON: Replace YOUR_GOOGLE_REVIEW_LINK and remove the
+           comment markers around the paragraph to show the button.
+      <p style="text-align: center; margin: 1rem 0 2rem;">
+        <a class="btn btn-primary" href="YOUR_GOOGLE_REVIEW_LINK">
+          Leave a Google Review
+        </a>
+      </p>
+      -->
+
+      <h3 style="text-align: center; margin: 2rem 0 1rem;">Client Testimonials</h3>
 
       <div class="card-grid card-grid-3">
 
@@ -267,27 +374,28 @@
 
           <div class="form-field">
             <label for="service">Service Needed</label>
-            <select id="service" name="service" required>
+            <select id="service" name="service" aria-describedby="service-pricing" required>
               <option value="">Select a service</option>
-              <option>Dog Walks</option>
-              <option>Pet Visits</option>
-              <option>Cat Boarding</option>
+              <option data-rates="dog-walks-rates">Dog Walks</option>
+              <option value="Pet Visits" data-rates="cat-visits-rates">Cat Visits</option>
+              <option data-rates="cat-boarding-rates">Cat Boarding</option>
               <option>Other</option>
             </select>
           </div>
         </div>
 
-        <div class="form-row">
-          <div class="form-field">
+        <div class="form-row message-pricing-row">
+          <div class="form-field message-field">
             <label for="message">Message</label>
             <textarea
               id="message"
               name="message"
               rows="6"
-              placeholder="Tell us about your pet, your schedule, and what kind of care you're looking for."
+              placeholder="What dates do you need, and how many pets need care?"
               required
             ></textarea>
           </div>
+          <div class="service-pricing" id="service-pricing" role="status" aria-atomic="true"></div>
         </div>
 
         <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
@@ -296,40 +404,81 @@
   </section>
 
   <!-- ================= FOOTER ================= -->
-  <footer class="footer">
-    <div class="container footer-grid">
+ <footer class="footer">
+  <div class="container footer-grid">
 
-      <div class="footer-brand">
-        <img src="assets/logo4.png" alt="Logo" class="logo small" />
-        <div>
-          <div class="footer-title">Pawsitive Pet Care</div>
-          <div class="footer-tagline">
-            Dependable care for dogs, cats, and the people who love them.
-          </div>
+    <!-- Brand -->
+    <div class="footer-brand">
+      <img src="assets/logo4.png" alt="Pawsitive Pet Care logo" class="logo small" />
+      <div>
+        <div class="footer-title">Pawsitive Pet Care</div>
+        <div class="footer-tagline">
+          Dependable care for dogs, cats, and the people who love them.
+        </div>
+        <div class="footer-owner">
+          Owned &amp; Operated by Shaun Moses<br>
+          Fully Bonded &amp; Insured
         </div>
       </div>
-
-      <div class="footer-links">
-        <a href="#services">Services</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact</a>
-      </div>
-
-      <div class="footer-social">
-        <a href="mailto:pawsitivepetcarewi@yahoo.com" aria-label="Email">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-      </div>
-
     </div>
 
-    <div class="container footer-bottom">
-      <p>&copy; 2026 Pawsitive Pet Care. All rights reserved.</p>
+    <!-- Links -->
+    <div class="footer-links">
+      <a href="#services">Services &amp; Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
     </div>
-  </footer>
+
+    <!-- Hours -->
+    <div class="footer-hours">
+      <div class="footer-title">Hours</div>
+      <div class="footer-tagline">
+        Mon–Fri: 8:00 AM – 5:00 PM<br />
+        Evenings &amp; weekends by appointment
+      </div>
+
+      <!-- Optional email link (recommended over icon) -->
+      <a href="mailto:pawsitivepetcarewi@yahoo.com" class="footer-email">
+        Email Us
+      </a>
+    </div>
+
+  </div>
+
+  <div class="container footer-bottom">
+    <p>&copy; 2026 Pawsitive Pet Care. All rights reserved.</p>
+  </div>
+</footer>
 
   <script>
     document.documentElement.classList.remove('no-js');
+
+    const serviceSelect = document.getElementById('service');
+    const servicePricing = document.getElementById('service-pricing');
+
+    function updateServicePricing() {
+      const selected = serviceSelect.selectedOptions[0];
+      const rateId = selected?.dataset.rates;
+      servicePricing.replaceChildren();
+
+      if (!rateId) return;
+
+      const originalRates = document.getElementById(rateId);
+      const rates = originalRates.cloneNode(true);
+      rates.removeAttribute('id');
+
+      const heading = document.createElement('h3');
+      heading.textContent = selected.textContent + ' Pricing';
+      servicePricing.append(heading, rates);
+
+      const feeNote = originalRates.closest('article').querySelector('.pricing-note');
+      if (feeNote) servicePricing.append(feeNote.cloneNode(true));
+    }
+
+    serviceSelect.addEventListener('change', updateServicePricing);
+    window.addEventListener('pageshow', updateServicePricing);
+    updateServicePricing();
+
 
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
@@ -359,6 +508,7 @@
 
     revealItems.forEach((item) => observer.observe(item));
   </script>
+
 
 </body>
 </html>
