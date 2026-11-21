@@ -112,6 +112,28 @@
       }
     }
   </style>
+  <script>
+  const widget = document.querySelector(
+    '.elfsight-app-319a8364-5300-479b-aa26-5e424eefd7b3'
+  );
+
+  if (widget) {
+    const hideBadge = () => {
+      const badge = widget.querySelector(
+        'a[href^="https://elfsight.com/google-reviews-widget/"]'
+      );
+      if (badge && badge.style.getPropertyValue('display') !== 'none') {
+        badge.style.setProperty('display', 'none', 'important');
+      }
+    };
+
+    new MutationObserver(hideBadge).observe(widget, {
+      childList: true,
+      subtree: true
+    });
+    hideBadge();
+  }
+</script>
 </head>
 
 <body>
