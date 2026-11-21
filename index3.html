@@ -112,31 +112,6 @@
       }
     }
   </style>
-  <script>
-  (() => {
-    const reviews = document.getElementById('reviews');
-    if (!reviews) return;
-
-    const badgeSelector =
-      'a[href^="https://elfsight.com/google-reviews-widget/"][href*="utm_campaign=free-widget"]';
-
-    function hideBadge(root) {
-      for (const badge of root.querySelectorAll(badgeSelector)) {
-        if (badge.style.getPropertyValue('display') !== 'none' ||
-            badge.style.getPropertyPriority('display') !== 'important') {
-          badge.style.setProperty('display', 'none', 'important');
-        }
-      }
-
-      for (const element of root.querySelectorAll('*')) {
-        if (element.shadowRoot) hideBadge(element.shadowRoot);
-      }
-    }
-
-    hideBadge(reviews);
-    window.setInterval(() => hideBadge(reviews), 1000);
-  })();
-</script>
 </head>
 
 <body>
@@ -532,6 +507,30 @@
     revealItems.forEach((item) => observer.observe(item));
   </script>
 
+<script>
+  (() => {
+    const reviews = document.getElementById('reviews');
+    if (!reviews) return;
 
+    const badgeSelector =
+      'a[href^="https://elfsight.com/google-reviews-widget/"][href*="utm_campaign=free-widget"]';
+
+    function hideBadge(root) {
+      for (const badge of root.querySelectorAll(badgeSelector)) {
+        if (badge.style.getPropertyValue('display') !== 'none' ||
+            badge.style.getPropertyPriority('display') !== 'important') {
+          badge.style.setProperty('display', 'none', 'important');
+        }
+      }
+
+      for (const element of root.querySelectorAll('*')) {
+        if (element.shadowRoot) hideBadge(element.shadowRoot);
+      }
+    }
+
+    hideBadge(reviews);
+    window.setInterval(() => hideBadge(reviews), 1000);
+  })();
+</script>
 </body>
 </html>
